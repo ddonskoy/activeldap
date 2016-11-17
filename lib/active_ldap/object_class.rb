@@ -70,7 +70,7 @@ module ActiveLdap
       unless invalid_classes.empty?
         format = _("unknown objectClass in LDAP server: %s")
         message = format % invalid_classes.join(', ')
-        raise ObjectClassError, message
+        # raise ObjectClassError, message
       end
     end
 
